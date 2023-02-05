@@ -12,5 +12,13 @@ function getRandomQuote() {
   return quotes[randomIndex];
 }
 
+
 document.getElementById("quote-box").innerHTML = getRandomQuote();
 
+//Math.random() er en funktion, der giver et tilfældigt tal mellem 0 (inklusiv) og 1 (eksklusiv).
+//quotes.length giver antallet af citater i listen quotes.
+//Math.random() * quotes.length giver et tilfældigt tal mellem 0 og antallet af citater i listen quotes.
+//Math.floor() er en funktion, der runder et tal ned til nærmeste helt antal.
+//Math.floor(Math.random() * quotes.length) giver en tilfældig heltals-index til et citat i listen quotes.
+//const randomIndex er en variabel, der gemmer denne tilfældige heltals-index.
+//Så alt i alt giver denne kode en tilfældig heltals-index til et citat i listen quotes, som vi kan bruge til at hente et tilfældigt citat fra listen.
